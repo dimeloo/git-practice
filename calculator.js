@@ -36,9 +36,9 @@ const readline = require('readline').createInterface({
   output: process.stdout,
 })
 
-const startOver = userAnswer
+//const startOver = userAnswer
 
-do{
+//do{
 
 readline.question('....Who are you? Please give me your name: ', (name) => {
   console.log(`Greetings ${name}! I hope you are ready for something special.`)
@@ -64,8 +64,9 @@ readline.question('....Who are you? Please give me your name: ', (name) => {
                   console.log('Result:', divide(firstNumber, secondNumber))
               }else {
                   console.log(`I'm not sure what you are trying to accomplish... I don't know how to use this: ${operation}`)
-              }
+              }})})})})
             
+              /*
             readline.question('Would you like to go again? Please enter Yes or No: ', (userAnswer) => {
 
                 if (userAnswer === 'Yes'){
@@ -76,4 +77,7 @@ readline.question('....Who are you? Please give me your name: ', (name) => {
                     return userAnswer
                 }else {
                     console.log(`I don't unerstand what you meant by ${userAnswer}`)
-                }})})})})})} while (startOver = 'Yes')
+                }})})})})})} 
+                
+                while (startOver = 'Yes')
+                */
